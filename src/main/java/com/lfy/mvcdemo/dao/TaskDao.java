@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.*;
 import java.util.List;
 
 @Mapper
-public interface taskDao {
+public interface TaskDao {
     @Insert("insert into task(id,content,createdTime) values (#{id},#{content},#{createdTime})")
     void addTask(Task task);
 
